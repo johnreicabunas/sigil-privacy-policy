@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Privacy Policy for Sigil, the terminal launcher for Android by ClearStack.">
+<title>Sigil — Privacy Policy</title>
+<style>
+:root{color-scheme:light;--ink:#173d31;--muted:#52675c;--paper:#f8f7ee;--mint:#dcf3c8}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.7 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{max-width:850px;margin:auto;padding:56px 24px 80px}.brand{font-size:22px;font-weight:800;letter-spacing:-.7px}.mark{display:inline-block;background:var(--ink);color:var(--mint);border-radius:14px;padding:3px 13px;margin-right:10px;font-family:monospace}.eyebrow{margin:44px 0 6px;text-transform:uppercase;letter-spacing:2px;font-size:12px;font-weight:750}h1{font-size:clamp(38px,7vw,64px);letter-spacing:-2px;line-height:1.1;margin:0 0 20px}h2{font-size:24px;letter-spacing:-.5px;margin-top:36px;line-height:1.3}p,li{color:var(--muted)}a{color:var(--ink);text-underline-offset:4px;overflow-wrap:anywhere}a:focus-visible{outline:3px solid #448b49;outline-offset:4px}.intro{font-size:20px}.summary{background:var(--mint);border-radius:24px;padding:24px 28px;margin:28px 0}.summary p{margin:0}.meta{font-size:14px}ul{padding-left:22px}li{margin:10px 0}strong{color:var(--ink)}code{font-size:.94em;background:#e8eddf;border-radius:5px;padding:2px 5px}footer{border-top:1px solid #d9dfd0;margin-top:42px;padding-top:20px;font-size:14px}@media(max-width:520px){main{padding-top:32px}.summary{padding:20px}.eyebrow{margin-top:32px}}
+</style>
+</head>
+<body><main>
+<div class="brand"><span class="mark" aria-hidden="true">&gt;_</span>sigil</div>
+<p class="eyebrow">ClearStack · Android terminal launcher</p>
+<h1>Privacy Policy</h1>
+<p class="intro">Your launcher, your device. Here is how Sigil handles your information.</p>
+<p class="meta">Effective and last updated: October 6, 2026</p>
+<div class="summary"><p><strong>Sigil does not send your launcher data to a developer-operated server.</strong> It has no accounts, advertising, analytics SDKs, or developer-operated cloud sync. Settings, command history, and usage counters are stored on your device. Optional contacts and notification features process information locally after you grant permission.</p></div>
+<p>This policy applies to <strong>sigil: Terminal Launcher</strong> (also called Sigil), Android package <code>com.johnreicabunas.sigil</code>, provided by <strong>ClearStack / John Reicabunas</strong>. For privacy questions, contact <a href="mailto:johnreicabunas@gmail.com">johnreicabunas@gmail.com</a>.</p>
+<h2>1. Information used on your device</h2>
+<ul>
+<li><strong>Installed launchable apps:</strong> Sigil reads app names, package identifiers, and launch components to list, search, and open your apps. The app index is held in memory. Successful app launches are counted locally to improve suggestions.</li>
+<li><strong>Preferences and custom commands:</strong> Theme, font, prompt, banner, aliases, command definitions, notification ticker settings, and other preferences are saved in Android app storage so your setup persists.</li>
+<li><strong>Command history and usage:</strong> Sigil saves up to 100 recent distinct commands and local command/app usage counters. Commands can contain personal information you type, including contact names, search terms, URLs, or message text. Direct lock setup commands and detected aliased or custom-command lock setup invocations are excluded from history. Avoid putting secrets into aliases or command definitions: those definitions are saved as entered.</li>
+<li><strong>Contacts, when permitted:</strong> The call and SMS features look up a matching contact name and phone number using Android's contacts provider. Sigil does not upload your address book or maintain a separate contacts database.</li>
+<li><strong>Notifications, when enabled:</strong> Android notification access lets Sigil read notification app names, titles, text, timestamps, and identifiers to display your inbox or live ticker, and open or dismiss notifications at your request. Notification contents may include sensitive messages from other apps. Sigil keeps the active list and displayed transcript in memory, without a persistent notification archive.</li>
+<li><strong>Optional session lock:</strong> Sigil stores a SHA-256 digest of your chosen passphrase and local lock settings. Biometric authentication is handled by Android; Sigil does not receive or store your fingerprint, face image, or biometric template.</li>
+<li><strong>Device information:</strong> The system information command reads details such as device model, Android version, uptime, battery status, and available memory/storage for local display. The flashlight command controls the torch; it does not take photos or record video.</li>
+</ul>
+<h2>2. Permissions and your choices</h2>
+<p>Contacts access is optional and requested for contact-based calling or messaging. Notification access is optional and enabled through Android's special-access settings. You can deny or revoke these permissions in Android Settings; the related features will be unavailable. Turning off the ticker stops new ticker lines, but does not revoke Android notification access or erase lines already displayed.</p>
+<p>Sigil does not request location, microphone, SMS-reading, call-log, or direct Internet permissions. Making Sigil your default home app is optional and can be changed in Android's home-app settings.</p>
+<h2>3. When information leaves your device</h2>
+<p>Sigil delegates some actions to other apps. A web search passes your query to your search app or browser (with a Google Search fallback). Opening a URL passes the address to an app that can handle it. Calling opens the dialer with a number; SMS opens your messaging app with the recipient and any message text you entered. Those apps, websites, and service providers may receive or process this information under their own privacy policies. Sigil does not automatically place calls or send messages.</p>
+<p><strong>Android backups:</strong> Android backup is enabled for Sigil. Depending on your device, operating system, account, and backup settings, saved app data may be included in a system backup or device-to-device transfer. Android and your backup provider control that process. Manage backup copies through their settings and policies.</p>
+<p>Sigil contains no advertising, billing, analytics, or developer-operated crash-reporting SDK. Android or Google Play may independently process installation or diagnostic information under their own settings and policies. We do not sell your launcher data.</p>
+<h2>4. Retention and deletion</h2>
+<p>Preferences, aliases, command definitions, lock settings, history, and usage counters remain in local app storage until replaced, removed where supported, or cleared. Older history entries are dropped as the 100-entry limit is reached. You can remove individual aliases with <code>unalias</code> and custom commands with <code>undef</code>.</p>
+<p>The <code>clear</code> command clears the visible terminal transcript; it does <strong>not</strong> delete saved command history or usage counters. Notification lists are held only in the running app's memory, and ticker/transcript content is not saved as a notification archive. Existing notification content can remain visible until cleared or the app process ends.</p>
+<p>To delete all Sigil data on this device, use <strong>Android Settings → Apps → Sigil → Storage → Clear storage / Clear data</strong>, or uninstall Sigil. Menu names vary by device. System backup copies may remain separately; manage or delete those through your backup provider. There is no Sigil account or developer-hosted launcher database to delete.</p>
+<h2>5. Security</h2>
+<p>Sigil uses Android's app-private storage and operating-system permission controls. Device security and backup protection depend on your Android configuration. The optional Sigil session lock is a convenience feature and does not replace Android's screen lock or provide encryption of all stored launcher data. No storage or transmission method can be guaranteed completely secure.</p>
+<h2>6. Support and this policy website</h2>
+<p>If you email us, we receive your email address and whatever information you choose to include. We use this information to respond, troubleshoot your request, and maintain relevant support records. Our email provider processes the correspondence. We retain it only as needed for those purposes or legal obligations; you may contact us to request access, correction, or deletion where applicable. Do not include passwords or unnecessary sensitive information.</p>
+<p>This static policy website is hosted on GitHub Pages. It has no analytics scripts, forms, or cookies added by ClearStack. GitHub may process technical request information, such as IP addresses and browser information, to operate and secure hosting. See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a>. Opening this website is separate from Sigil's local launcher functionality.</p>
+<h2>7. Changes and contact</h2>
+<p>We will update this page and its revision date if Sigil's data handling changes. Material changes requiring permission or disclosure will be addressed in the app as appropriate.</p>
+<p>For questions about this policy or privacy requests, email <a href="mailto:johnreicabunas@gmail.com">johnreicabunas@gmail.com</a> and mention Sigil. Local launcher data is held on your device, so we cannot remotely retrieve or delete it.</p>
+<footer>Sigil · ClearStack / John Reicabunas · Privacy Policy</footer>
+</main></body></html>
